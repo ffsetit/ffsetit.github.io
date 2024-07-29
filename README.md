@@ -1,2 +1,3 @@
-# ffsetit.github.io
-# ffsetit.github.io
+layout: page
+title: "Home"
+permalink: /
