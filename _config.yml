@@ -1,16 +1,16 @@
 title: FFSETIT Homepage
+author:
+  name: Peter Barnes
+  email: ffsetit@gmail.com
 description: Bookmark this to keep an eye on my project updates!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-author:
-  name: Peter Barnes
-  email: "ffsetit@gmail.com"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 minima:
   skin: dark
