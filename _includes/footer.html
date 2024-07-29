@@ -18,8 +18,8 @@
         </div>
         <div class="footer-col">
           <p>{{ site.contact.address | escape }}</p>
-          <p>GSM: <a href="tel:"{{ site.contact.gsm | escape }}></a></p>
-          <p>Mail: <a href="mailto:"{{ site.contact.mail | escape }}></a></p>
+          <p>GSM: <a href="tel:{{ site.contact.gsm | escape }}">{{ site.contact.gsm }}</a></p>
+          <p>Mail: <a href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a></p>
         </div>
       </div>
   
