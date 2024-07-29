@@ -2,14 +2,19 @@ title: FFSETIT Homepage
 description: Bookmark this to keep an eye on my project updates!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
-minima:
-  skin: dark
-  date_format: "%b %-d, %Y"
+author:
+  name: Peter Barnes
+  email: "ffsetit@gmail.com"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+minima:
+  skin: dark
+  date_format: "%b %-d, %Y"
+  social_links:
+    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
+    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }  
