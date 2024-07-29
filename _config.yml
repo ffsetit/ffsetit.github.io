@@ -19,5 +19,5 @@ minima:
   skin: dark
   date_format: "%b %-d, %Y"
   social_links:
-    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
-    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }  
+    - { platform: instagram,  user_url: "https://www.instagram.com/jvd_bvba/?hl=nl" }
+    - { platform: facebook, user_url: "https://www.facebook.com/Van-Driessche-Jente-Bouw-Renovatiebedrijf-1376218165755069/" }  
