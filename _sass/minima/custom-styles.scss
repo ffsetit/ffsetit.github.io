@@ -2,3 +2,106 @@
     width: 150px;
     height: 150px;
 }
+
+.lang-wrapper {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+  }
+    .lang-nav {
+    display: inline;
+  }
+  .lang-nav ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+  }
+  .lang-nav li {
+    cursor: pointer;
+    padding-bottom:10px;
+  }
+  .lang-nav li ul {
+    display: none;
+  }
+  .lang-nav li:hover ul {
+    position: absolute;
+    top:29px;
+    right:-15px;
+    display: block;
+    background: #fff;
+    width: 150px;
+    padding-top: 0px;
+    z-index: 1;
+    border-radius:5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  }
+  .lang-nav li:hover .triangle {
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    z-index:10;
+    height: 14px;
+    overflow:hidden;
+    width: 30px;
+    background: transparent;
+  }
+  .lang-nav li:hover .triangle:after {
+    content: '';
+    display: block;
+    z-index: 20;
+    width: 15px;
+    transform: rotate(45deg) translateY(0px) translatex(10px);
+    height: 15px;
+    background: #fff;
+    border-radius:2px 0px 0px 0px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  }
+  .lang-nav li ul li {
+    position: relative;
+    text-align: left;
+    background: transparent;
+    padding: 15px 15px;
+    padding-bottom:0;
+    z-index: 2;
+    font-size: 15px;
+    color: #3c3c3c;
+  }
+  .lang-nav li ul li:last-of-type {
+    padding-bottom: 15px;
+  }
+  .lang-nav li ul li span {
+    padding-left: 5px;
+  }
+  .lang-nav li ul li span:hover, .lang-nav li ul li span.active {
+    color: #146c78;
+  }
+  .sl-flag {
+    display: inline-block;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+    width: 15px;
+    height: 15px;
+    background: #aaa;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+  }
+  .flag-en {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAYAAACJfM0wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADC0AAAwtAb/HybMAAAOrSURBVDhPpVRrbBRVFP7u3Ud3W7bbUo1iMdJSCqSwFkmMJvRdXgEk/SEtBEwQItGA/43RH/7glxLjIxWhhuJOK/IIKZLQ0kotIYZHW9pGUddS0OwKW0u3j+3uzuzO9dyZrTbFRQlfcmbmfnPOd+6558wwvuidm7rA/fg1isON1dhVV44ftu2EerKLSAusa1dg+ekmKC2Xsb32LFDgNP1ngDMy3RfJQ1jPo0UecY9khsaUnic1udK8Hp6FDui+KWBSN7I9LIyYsE4aEXiKXPjy643g2+oq0XF6H5qObUBxodNMMKGbEf8HScFijwvK8U04c6AGVSIIHg0G8ViOG1u3VKD91F58RdlWLk2XEdD/9fBNCCGTT2FlcSaaTmxCy/s1qEjcwfjWVxA6fwH8xhPP4fahBkT8AeRQgtqXy9F6ci+OemuQkZFGAveLS8rpTEPDkZdwav9GlMX8CNXuQKijC7lH6rGk/mOwsf4BMXyuDdzhQHbpKmR5lgPMPGhVS8AS1/DTjl3/TMW6FVh6wouELQ3qoA+hi5eghsYwd3UVsp71gHFuxEJQvXoiIfR4XCRiMZFQVZHQNKGTCeLVsXExUFMnevA02QLRv2aziN0bNd5Jfxkn4w0djTRUzYhnP+7ZJzB7Eqarl7wWh9p5FWIkbFbidsBe+TyY3Wb6TGPWibEezE3dIQMWsOzH6ZbMTg0V9/6kh7i5TgHWi/z/ECbBnDRztxLSeySafEgN1ley9sEeOs3p0F0gJndI4jYOnv8kVZBsUgqwWCj0tzC3WOhCAcRQRwwuHg5j8LU3oZ25TCuaiqoiLGw8CFumSzbe8JFgjIPJZLIy4rnd7ca0aRMTCLa1Y7i1DWogAOscF+zZ2clGSREymw32rCzYXPRuRmzE78ddGtsgxcbHx2HUM0Xk0Cf1+OWpFxDr6wPLnY/vb43ibOsV02Em6OuQGzvX3o3zHd2IRlWDzixchDmLCzF5tQc3cvPBhz76FL75L4KFRjGvuwX+6s1493g/Vq9TEAiMUGXJps2A5ILDY1hT3YDdb3yOzq7riNLH5F5WhML976Hg5wH6MU1OYF7PN/i9fAPeVq6hZJUXhz7wUbgTFiudeQpYjOZlQGkMoKLMi1dfP4gL3/UiQhW4aPf8t5L1eOvoFZSWKDh8YJB+3A6yWcP/IORbwQrS0ez9A5XlCnbu+QzfdvaCl5Uq+OLDm0lBa9L74WCM1QIzwbHmO6iqUOgoHkFwNowEz8gE6fgLltSWDyXGAz0AAAAASUVORK5CYII=');
+    background-size: cover;
+    background-position: center center;
+  }
+  .flag-nl {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAVUExURa4cKKoAAM2dnv///6muwwAshCFGixmWCz0AAAAJcEhZcwAAEDwAABA8AZHWlzMAAAAkSURBVBjTYyATCMIBgxIcMBjDAblMFzhgCIUDhjQ4IJ6ZlgYA/gcn2TvUwlQAAAAASUVORK5CYII=');
+    background-size: cover;
+    background-position: center center;
+    
+  }
+  .flag-fr {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAYUExURQAjlQAWkzpFnfDx9v////GAhewAI+0pORBqgxIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAWSURBVBjTY2BgVHYBAtf08mHGTC8HANFDLs3SbwFDAAAAAElFTkSuQmCC');
+    background-size: cover;
+    background-position: center center;
+    
+  }

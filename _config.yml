@@ -20,11 +20,21 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-multiple-languages-plugin
 
 remote_theme: jekyll/minima
 
+languages: ["en", "nl", "fr"]
+lanugageNames:
+  en: English
+  nl: Nederlands
+  fr: frog
+
+exclude_from_localizations: ["index.html", "javascript", "css", "build.sh", "README.md"]
+default_locale_in_subfolder: true
+
 minima:
-  skin: dark
+  skin: auto
   date_format: "%b %-d, %Y"
   social_links:
     - { platform: instagram,  user_url: "https://www.instagram.com/jvd_bvba/?hl=nl" }
