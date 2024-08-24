@@ -4,7 +4,7 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" crossorigin="anonymous"/>
 <script>
 // https://stackoverflow.com/questions/56300132/how-to-override-css-prefers-color-scheme-setting
 // Return the system level color scheme, but if something's in local storage, return that
@@ -51,19 +51,18 @@ function toggleColorScheme() {
   if (scheme === "light") {
     newScheme = "dark";
   }
-
+  const spanElement = document.querySelector('.material-symbols-outlined');
+  spanElement.textContent = newScheme+'_mode';
   applyPreferredColorScheme(newScheme);
   savePreferredColorScheme(newScheme);
-
 
 }
 
 // Apply the chosen color scheme by traversing stylesheet rules, and applying a medium.
 function applyPreferredColorScheme(scheme) {
   for (var s = 0; s < document.styleSheets.length; s++) {
-
-    for (var i = 0; i < document.styleSheets[s].cssRules.length; i++) {
-      rule = document.styleSheets[s].cssRules[i];
+    if(document.styleSheets[s].cssRules != null){
+    for (var i = 0; i < document.styleSheets[s].cssRules.length; i++) {      rule = document.styleSheets[s].cssRules[i];
 
 
       if (rule && rule.media && rule.media.mediaText.includes("prefers-color-scheme")) {
@@ -87,7 +86,7 @@ function applyPreferredColorScheme(scheme) {
         }
       }
     }
-
+  }
 
   }
 
