@@ -1,4 +1,5 @@
 global:
+  tagline: Van Driessche Jente Construction & Rénovation
   english: English
   dutch: Nederlands
   french: Français
@@ -7,3 +8,7 @@ contact:
   name: Van Driessche Jente Construction & Rénovation
   phone: gsm
   email: email
+titles:
+  home: Page d'accueil
+  about: Environ
+about: environ

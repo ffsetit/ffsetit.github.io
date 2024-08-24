@@ -1,4 +1,5 @@
 global:
+  tagline: Van Driessche Jente Bouw & Renovatie
   english: English
   dutch: Nederlands
   french: Français
@@ -7,3 +8,7 @@ contact:
   name: Van Driessche Jente Bouw & Renovatie
   phone: gsm
   email: mail
+titles:
+  home: Startpagina
+  about: Over Ons  
+about: over
