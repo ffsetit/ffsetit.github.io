@@ -1,14 +1,15 @@
 global:
-  tagline: Van Driessche Jente Construction & Rénovation
+  tagline: Location de vacances au cœur de Blankenberge
   english: English
   dutch: Nederlands
   french: Français
   language: Langue
 contact:
-  name: Van Driessche Jente Construction & Rénovation
+  name: Demandes de vacances
   phone: gsm
   email: email
 titles:
   home: Page d'accueil
   about: Environ
+  photos: Photos
 about: environ

@@ -128,3 +128,36 @@
     background-position: center center;
     
   }
+
+    /* Gallery-specific styles */
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    margin: 0 0 32px 0;
+    list-style: none;
+    justify-content: flex-start;
+  }
+  #gallery li {
+    display: none; /* Hide li, only show images */
+  }
+  #gallery img.popup-img {
+    display: block;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    cursor: pointer;
+    max-width: 220px;
+    max-height: 180px;
+    object-fit: cover;
+    background: #fff;
+    transition: box-shadow 0.2s;
+  }
+  #gallery img.popup-img:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  }
+  /* Show images directly in the gallery, not the li */
+  #gallery img.popup-img {
+    margin-right: 0;
+  }
