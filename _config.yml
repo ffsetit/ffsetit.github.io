@@ -20,7 +20,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-multiple-languages-plugin
 
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@ad4a88ca6fe9d7fd5d178acf50df07d2c6eaf821
 
 languages: ["en", "nl", "fr"]
 lanugageNames:
